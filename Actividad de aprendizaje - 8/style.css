@@ -1,0 +1,130 @@
+/* PALETA DE COLORES */
+:root {
+    --bg-negro: #0a0a0a;
+    --bg-tarjeta: #141414;
+    --rojo-acento: #a11d1d;
+    --blanco: #ffffff;
+    --gris: #b0b0b0;
+    --borde: #222222;
+}
+
+/* Configuraciones para el Scrollspy */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Evita que la barra pegajosa tape los títulos */
+}
+
+body {
+    background-color: var(--bg-negro);
+    color: var(--blanco);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVEGACIÓN */
+.custom-nav {
+    border-bottom: 1px solid var(--borde);
+    background: rgba(10, 10, 10, 0.95); /* Fondo ligeramente transparente */
+    backdrop-filter: blur(5px);
+}
+
+.custom-link {
+    color: var(--blanco) !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Efecto hover normal */
+.custom-link:hover { 
+    color: var(--rojo-acento) !important; 
+}
+
+/* Efecto activo del Scrollspy */
+.custom-link.active {
+    color: var(--rojo-acento) !important;
+    font-weight: bold;
+}
+
+/* CONTENEDOR Y SECCIONES */
+.wrapper {
+    max-width: 900px;
+}
+
+.custom-section {
+    border-bottom: 1px solid #111;
+}
+
+/* TEXTOS Y TIPOGRAFÍA */
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+.subtitle {
+    color: var(--rojo-acento);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.bio {
+    max-width: 650px;
+    color: var(--gris);
+    font-size: 1.1rem;
+}
+
+/* TARJETAS (ARTÍCULOS) */
+.custom-card {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 0; 
+    color: var(--blanco);
+    transition: transform 0.2s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: #333;
+}
+
+.custom-card .card-text {
+    font-size: 14px;
+    color: var(--gris);
+}
+
+/* CONTACTO (LISTA) */
+.custom-list {
+    border-radius: 0;
+}
+
+.custom-list-item {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid var(--borde);
+    color: var(--blanco);
+    padding: 15px 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.text-accent {
+    color: var(--rojo-acento);
+}
+
+/* FOOTER */
+.hearts { 
+    color: var(--rojo-acento); 
+    font-size: 18px; 
+    letter-spacing: 2px;
+}
+
+.footer-brand { 
+    text-transform: uppercase; 
+}
+
+.footer-tagline { 
+    font-size: 11px; 
+    color: var(--gris); 
+    letter-spacing: 2px; 
+}
